@@ -1,0 +1,17 @@
+{% extends 'base_template.html' %}
+{% block title %}{{projeto.titulo}} / Meu Portfolio{% endblock %}
+
+{% block content %}
+
+<h1>{{Projeto.titulo}}</h1>
+    <section>
+        <h3>Detalhes do projeto</h3>
+        <p>{{projeto.descricao}}</p>
+
+        <h3>Tecnologias usadas</h3>
+        <p>{{projeto.tecnologia}}</p>
+
+        <p>Github</p>
+        <a href="{{projeto.github}}">Repositório</a>
+    </section>
+{% endblock %}

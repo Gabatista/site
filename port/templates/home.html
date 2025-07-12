@@ -1,0 +1,25 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block title %}Home / Meu Portfolio{% endblock %}
+
+
+{% block content %}    
+    <h1 class="page-title">Bem vindo ao meu portfolio</h1>
+    <section>
+        <h1>Sobre mim</h1>
+        <p>Olá</p>
+    </section>
+    <section>
+        <h2>Habilidades</h2>
+        <ul>
+            {% for chave, dados in habilidades.items %}
+            <li>{{dados.nome}}</li>
+            {% endfor %}
+        </ul>
+    </section>
+    <section>
+        <H2>contatos</H2>
+        <p>email</p>
+    </section>
+{% endblock %}
