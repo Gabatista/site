@@ -5,6 +5,9 @@ from .dados import habilidades, projetos
 def home(request):
     return render(request, 'home.html', {'habilidades': habilidades})
 
+def home_english(request):
+    return render(request, 'index_english.html')
+
 def lista_projetos(request):
     return render(request, 'projetos.html', {'projetos': projetos})
 
